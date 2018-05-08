@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.TimerFragment">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbarTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/closeTimer"
+                android:layout_width="@dimen/sizeIcon"
+                android:layout_height="@dimen/sizeIcon"
+                android:src="@drawable/ic_close"
+                android:tint="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/closeTimer"
+                android:textSize="@dimen/sizeTextToolbar"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold"
+                android:text="Chiudi Timer"/>
+
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarTimer"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="74dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/timer"
+                android:tint="@color/indigo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEMPO DI RECUPERO"
+                android:textColor="@color/indigo"
+                android:textStyle="bold"
+                android:textSize="@dimen/sizeTextToolbar"/>
+
+
+        </LinearLayout>
+
+        <com.bcgdv.asia.lib.ticktock.TickTockView
+            android:id="@+id/timerRecupero"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            app:tickAutoFitText="true"
+            app:tickMiddleColor="@color/colorPrimary"
+            app:tickMoveCounterClockwise="true"
+            app:tickTextColor="@color/primary_text"
+            app:tickDotRadius="8dp"
+            app:tickCircleDuration="total_time"
+            app:tickEmptyRingColor="@color/colorPrimaryDark"
+            app:tickFillRingColor="@color/indigo"
+            app:tickRingThickness="3dp" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/rosso"
+            android:text="Reset"
+            android:textSize="@dimen/textSection"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

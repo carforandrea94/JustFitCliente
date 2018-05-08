@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp14">14</dimen>
+    <dimen name="dp1">1</dimen>
+    <dimen name="sp14">14sp</dimen>
+    <dimen name="sp16">16sp</dimen>
+
+    <dimen name="text_size">30dp</dimen>
+    <dimen name="selected_text_size">35dp</dimen>
+    <dimen name="textLabel">12sp</dimen>
+    <dimen name="textSection">16sp</dimen>
+    <dimen name="sizeTextToolbar">20sp</dimen>
+    <dimen name="sizeIcon">30dp</dimen>
+</resources>

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sfondo"
+    tools:context="com.example.andreacarfora.justfit_cliente.Fragments.ProfiloFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="20dp"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2.5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profilePhoto"
+                        android:layout_width="90dp"
+                        android:layout_height="105dp"
+                        android:layout_gravity="center_horizontal|left"
+                        android:layout_marginStart="15dp"
+                        android:contentDescription="@string/username"
+                        android:elevation="10dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/avatar_google"
+                        />
+
+
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/txt_profile"
+                        android:layout_toRightOf="@+id/profilePhoto"
+                        app:ms_arrow_tint="@color/colorPrimaryDark"
+                        />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="false"
+                        android:layout_below="@+id/spinner"
+                        android:layout_centerInParent="false"
+                        android:gravity="center"
+                        android:layout_toRightOf="@+id/profilePhoto"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:elevation="5dp"
+                                android:src="@drawable/bilancia"
+                                android:tint="@color/rosso" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="97.7"
+                                android:textColor="@color/secondary_text"
+                                android:textSize="@dimen/sp16" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kg"
+                                android:textColor="@color/red_logout"
+                                android:textStyle="italic" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:elevation="15dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="31dp"
+                                android:elevation="5dp"
+                                android:src="@drawable/plicometro"
+                                android:tint="@color/amber" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="11.15"
+                                android:textColor="@color/secondary_text"
+                                android:textSize="@dimen/sp16" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="%"
+                                android:textColor="@color/amber"
+                                android:textStyle="italic" />
+
+
+                        </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_margin="15dp"
+                                    android:orientation="vertical">
+
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:elevation="5dp"
+                                        android:src="@drawable/altimeter"
+                                        android:tint="@color/teal"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="193"
+                                        android:textColor="@color/secondary_text"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="cm"
+                                        android:textColor="@color/teal"
+                                        android:textStyle="italic" />
+
+
+                                </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2.5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/myPTfoto"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:padding="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:contentDescription="@string/username"
+                        android:src="@drawable/avatar_google"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal Trainer"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/textLabel"
+                        android:layout_toRightOf="@+id/myPTfoto"
+                        />
+
+                    <TextView
+                        android:id="@+id/personalTrainerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_toRightOf="@+id/myPTfoto"
+                        android:layout_centerInParent="true"
+                        android:text="Personal Trainer"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/primary_text" />
+
+
+                    <ImageView
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="5dp"
+                        android:layout_width="30dp"
+                        android:layout_centerInParent="true"
+                        android:layout_height="30dp"
+                        android:tint="@color/grey_trans"
+                        android:src="@drawable/ic_slim_arrow" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp">
+                <LinearLayout
+                    android:layout_marginBottom="1sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <ImageView
+                            android:id="@+id/imag1"
+                            android:layout_margin="5dp"
+                            android:layout_centerVertical="true"
+                            android:layout_width="@dimen/sizeIcon"
+                            android:layout_height="@dimen/sizeIcon"
+                            android:tint="@color/txt_profile"
+                            android:src="@drawable/ic_list" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_toRightOf="@+id/imag1"
+                            android:text="I miei dati"/>
+
+                        <ImageView
+                            android:id="@+id/editProfileButton"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="5dp"
+                            android:layout_centerVertical="true"
+                            android:layout_width="@dimen/sizeIcon"
+                            android:layout_height="@dimen/sizeIcon"
+                            android:src="@drawable/ic_edit"
+                            android:tint="@color/colorPrimaryDark"/>
+
+                    </RelativeLayout>
+                    <include
+                        layout="@layout/layout_divider" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layoutEmail"
+                        android:clickable="true"
+                        android:padding="@dimen/activity_horizontal_margin">
+
+                        <ImageView
+                            android:id="@+id/emailIcon"
+                            android:layout_width="wrap_content"
+                            android:contentDescription="@string/email"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                            android:tint="@color/txt_profile"
+                            android:src="@drawable/email_outline" />
+
+                        <TextView
+                            android:id="@+id/tvNumber3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:layout_toEndOf="@id/emailIcon"
+                            android:text="@string/email"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="@dimen/textLabel"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvNumber3"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/emailTextView"
+                            android:layout_toEndOf="@id/emailIcon"
+                            android:hint="@string/email"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary_text"/>
+
+                    </RelativeLayout>
+                    <include
+                        layout="@layout/layout_divider" />
+
+                    <RelativeLayout
+                        android:id="@+id/layoutPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:clickable="true"
+                        android:padding="@dimen/activity_horizontal_margin">
+
+                        <ImageView
+                            android:id="@+id/phoneIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                            android:contentDescription="@string/telefono"
+                            android:src="@drawable/phone"
+                            android:tint="@color/txt_profile" />
+
+                        <TextView
+                            android:id="@+id/tvNumber1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:layout_toEndOf="@id/phoneIcon"
+                            android:text="@string/telefono"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="@dimen/textLabel"
+                            />
+
+                        <TextView
+                            android:id="@+id/numberTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvNumber1"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="8dp"
+                            android:layout_toEndOf="@id/phoneIcon"
+                            android:hint="@string/telefono"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary_text" />
+
+                    </RelativeLayout>
+
+                    <include
+                        layout="@layout/layout_divider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_horizontal_margin">
+
+                        <ImageView
+                            android:id="@+id/dateIcon"
+                            android:layout_width="wrap_content"
+                            android:contentDescription="@string/email"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                            android:tint="@color/txt_profile"
+                            android:src="@drawable/calendar_text" />
+
+                        <TextView
+                            android:id="@+id/tvNumber4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:layout_toEndOf="@id/dateIcon"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="@dimen/textLabel"
+                            android:text="@string/data"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvNumber4"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/dateTextView"
+                            android:layout_toEndOf="@id/dateIcon"
+                            android:hint="@string/data"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary_text" />
+
+                    </RelativeLayout>
+                    <include
+                        layout="@layout/layout_divider" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:padding="@dimen/activity_horizontal_margin">
+
+                        <ImageView
+                            android:id="@+id/genderIcon"
+                            android:contentDescription="@string/username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                            android:tint="@color/txt_profile"
+                            android:src="@drawable/gender_male_female" />
+
+                        <TextView
+                            android:id="@+id/gender_profilo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:layout_toEndOf="@id/genderIcon"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="@dimen/textLabel"
+                            android:text="@string/sesso"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/gender_profilo"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="8dp"
+                            android:layout_toEndOf="@id/genderIcon"
+                            android:hint="@string/sesso"
+                            android:id="@+id/gender_profiloText"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary_text" />
+                    </RelativeLayout>
+                    <include
+                        layout="@layout/layout_divider" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

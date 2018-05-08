@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "114332444643",
+    "firebase_url": "https://justifit-c99ed.firebaseio.com",
+    "project_id": "justifit-c99ed",
+    "storage_bucket": "justifit-c99ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114332444643:android:e78897c510d35618",
+        "android_client_info": {
+          "package_name": "com.examle.enzo.justfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114332444643-ffp7f4v3vqll0qi1atl7215ara9mmm2d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn7PJcGh7owBh1ZlB7q3FM9oZ__ejfB54"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114332444643:android:bcd8e2fb38e63efb",
+        "android_client_info": {
+          "package_name": "com.example.enzo.justfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114332444643-3t82dmb4kpspmqsqla9v7mcomakvd12s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.enzo.justfit",
+            "certificate_hash": "d6840ca9d125ecaaeff2474814bd05f558373727"
+          }
+        },
+        {
+          "client_id": "114332444643-ffp7f4v3vqll0qi1atl7215ara9mmm2d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn7PJcGh7owBh1ZlB7q3FM9oZ__ejfB54"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114332444643-ffp7f4v3vqll0qi1atl7215ara9mmm2d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114332444643:android:9c720ca593ee79d1",
+        "android_client_info": {
+          "package_name": "com.example.andreacarfora.justfit_cliente"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114332444643-lv5mt60heta85l9bvccm60ppaq2l9hgj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.andreacarfora.justfit_cliente",
+            "certificate_hash": "fa9c0a5e2c3ec48e27f1bb7142c5241ee4e03a64"
+          }
+        },
+        {
+          "client_id": "114332444643-ffp7f4v3vqll0qi1atl7215ara9mmm2d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn7PJcGh7owBh1ZlB7q3FM9oZ__ejfB54"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114332444643-ffp7f4v3vqll0qi1atl7215ara9mmm2d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

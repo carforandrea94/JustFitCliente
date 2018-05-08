@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Just Fit</string>
+
+    <!-- Stringhe per il login -->
+    <string name="nome_utente">Nome utente</string>
+    <string name="effettua_login">Effettua il login</string>
+    <string name="password1">Password</string>
+    <string name="login">Login</string>
+    <string name="reset">Reset</string>
+    <string name="password_dimenticata">Password dimenticata?</string>
+    <string name="vai_alla_registrazione">Nessun account? Creane subito uno</string>
+    <!-- Fine stringhe per il login -->
+
+
+    <!-- Stringhe per la registrazione -->
+    <string name="Home">HOME</string>
+    <string name="Profilo">PROFILO</string>
+    <string name="Scheda">SCHEDA</string>
+    <string name="Diario">Diario</string>
+    <string name="Progressi">Progressi</string>
+
+
+    <!-- Stringhe per la registrazione -->
+    <string name="registrati">Registrati</string>
+    <string name="effetua_registrazione">Effettua la registrazione</string>
+    <string name="nome_e_cognome">Nome e cognome</string>
+    <string name="username">Nome utente</string>
+    <string name="ripeti_password">Ripeti password</string>
+    <string name="password2">Password (min 8 caratteri)</string>
+    <string name="email">Email</string>
+    <string name="sesso">Sesso</string>
+    <string name="nome">Nome</string>
+    <string name="cognome">Cognome</string>
+    <string name="telefono">Telefono</string>
+    <string name="vai_al_login">Hai già un account? Ritorna al Login</string>
+    <string name="data">Data di nascita</string>
+    <!-- Fine stringhe per la registrazione -->
+
+    <!-- Stringhe per profilo personal trainer -->
+    <string name="descrizione_immagine">Immagine del personal trainer</string>
+    <string name="feedback">Feedback</string>
+    <string name="descrizione">Descrizione</string>
+    <string name="contenuto_descrizione">Lorem Ipsum è considerato il testo segnaposto standard sin
+        dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li
+        assemblò per preparare un testo campione. </string>
+    <string name="contatti">Contatti</string>
+    <string name="annulla">Annulla</string>
+    <string name="salva_modifiche">Salva modifiche</string>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <string name="errore_di_connessione">Ops! Si è verificato un errore di connessione</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="number_picker_formatter">%01d</string>
+    <string name="number_picker_formatter2">%02d</string>
+    <!-- Font -->
+    <string name="roboto_regular">sans-serif</string>
+    <string name="roboto_light">sans-serif-light</string>
+    <string name="roboto_condensed">sans-serif-condensed</string>
+    <string name="roboto_thin">sans-serif-thin</string>
+    <string name="roboto_medium">sans-serif-medium</string>
+
+
+</resources>

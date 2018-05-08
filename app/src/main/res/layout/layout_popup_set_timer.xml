@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iconpopupalt"
+                android:layout_margin="5dp"
+                android:layout_width="@dimen/sizeIcon"
+                android:tint="@color/indigo"
+                android:layout_height="@dimen/sizeIcon"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/timer" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/sizeTextToolbar"
+                android:layout_toEndOf="@+id/iconpopupalt"
+                android:text="Imposta recupero"/>
+
+        </RelativeLayout>
+
+
+        <include
+            layout="@layout/layout_divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="min"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/textSection"
+                android:textColor="@color/secondary_text"/>
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:layout_gravity="center"
+                android:id="@+id/picker_minuti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:np_width="64dp"
+                app:np_height="180dp"
+                android:divider="@color/secondary_text"
+                app:np_dividerColor="@color/teal"
+                app:np_formatter="@string/number_picker_formatter"
+                app:np_max="10"
+                app:np_min="0"
+                app:np_selectedTextColor="@color/primary_text"
+                app:np_selectedTextSize="@dimen/selected_text_size"
+                app:np_textColor="@color/secondary_text"
+                app:np_textSize="@dimen/text_size"
+                app:np_value="1"
+                xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sec"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/textSection"
+                android:textColor="@color/secondary_text"/>
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:layout_gravity="center"
+                android:id="@+id/picker_secondi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:np_width="64dp"
+                app:np_height="180dp"
+                android:divider="@color/secondary_text"
+                app:np_dividerColor="@color/teal"
+                app:np_formatter="@string/number_picker_formatter2"
+                app:np_max="59"
+                app:np_min="0"
+                app:np_selectedTextColor="@color/primary_text"
+                app:np_selectedTextSize="@dimen/selected_text_size"
+                app:np_textColor="@color/secondary_text"
+                app:np_textSize="@dimen/textSection"
+                app:np_value="0"
+                xmlns:app="http://schemas.android.com/apk/res-auto"/>
+        </LinearLayout>
+
+        <include
+            layout="@layout/layout_divider"/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+
+        <Button
+                android:id="@+id/noTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20sp"
+                android:textStyle="bold"
+                android:elevation="0dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:backgroundTint="@color/cardview_light_background"
+                android:textAlignment="center"
+                android:textColor="@color/rosso"
+                android:text="Annulla"/>
+
+            <Button
+                android:id="@+id/okTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20sp"
+                android:textStyle="bold"
+                android:elevation="0dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:backgroundTint="@color/cardview_light_background"
+                android:textAlignment="center"
+                android:textColor="@color/txt_profile"
+                android:text="Ok"
+               />
+    </LinearLayout>
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>

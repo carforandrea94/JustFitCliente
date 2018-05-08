@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andreacarfora.justfit_cliente.Activities.ProfiloActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/closeModify"
+                android:layout_width="@dimen/sizeIcon"
+                android:layout_height="@dimen/sizeIcon"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:tint="@color/colorPrimaryDark"
+                android:src="@drawable/close"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Modifica Profilo"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/sizeTextToolbar" />
+
+
+            <ImageView
+                android:id="@+id/checkModify"
+                android:layout_width="@dimen/sizeIcon"
+                android:layout_height="@dimen/sizeIcon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:tint="@color/colorPrimaryDark"
+                android:src="@drawable/check"
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/modifyprofilePhoto"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="110dp"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/username"
+                    android:src="@mipmap/avatar_google"
+                    android:elevation="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cambia Foto"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textSection"/>
+            </LinearLayout>
+
+            <include
+                layout="@layout/layout_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/modifyname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Nome"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/textLabel"
+                    />
+
+                <EditText
+                    android:id="@+id/nameEditModify"
+                    android:hint="Nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSection"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/modifycognome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/textLabel"
+                    android:text="Cognome"
+                    />
+
+                <EditText
+                    android:id="@+id/cognomeEditModify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cognome"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSection"
+                    android:textColor="@color/primary_text"/>
+
+                <TextView
+                    android:id="@+id/modifydata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/textLabel"
+                    android:text="Data di nascita"
+                    />
+
+                <EditText
+                    android:id="@+id/datanascitaEditModify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Data di nascita"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSection"
+                    android:textColor="@color/primary_text" />
+
+                <TextView
+                    android:id="@+id/modifyTelefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="1"
+                    android:textSize="@dimen/textLabel"
+                    android:text="Telefono"
+                    />
+
+                <EditText
+                    android:id="@+id/telefonoEditModify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNumber3"
+                    android:hint="Telefono"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSection"
+                    android:textColor="@color/primary_text" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

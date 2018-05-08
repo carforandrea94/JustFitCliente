@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andreacarfora.justfit_cliente.Fragments.ProgressiFragment">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:dividerPadding="10dp"
+        android:showDividers=""
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/headerCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:id="@+id/icon1"
+                            android:layout_width="@dimen/sizeIcon"
+                            android:layout_height="@dimen/sizeIcon"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/bilancia"
+                            android:layout_centerInParent="true"
+                            android:tint="@color/rosso"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Peso"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/icon1"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/textSection"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:id="@+id/dotsSetPeso"
+                            android:layout_width="@dimen/sizeIcon"
+                            android:layout_height="@dimen/sizeIcon"
+                            android:backgroundTint="@color/cardview_light_background"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/dots" />
+
+                    </RelativeLayout>
+
+
+
+
+                    <com.github.anastr.speedviewlib.SpeedView
+                        android:id="@+id/speedView"
+                        android:layout_width="200dp"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/headerCard"
+                        android:layout_height="100dp"
+                        app:sv_centerCircleColor="@color/primary_text"
+                        app:sv_highSpeedColor="@color/rosso"
+                        app:sv_indicator="KiteIndicator"
+                        app:sv_indicatorColor="@color/celesteDark"
+                        app:sv_indicatorWidth="4dp"
+                        app:sv_lowSpeedColor="@color/green"
+                        app:sv_markColor="@color/white"
+                        app:sv_mediumSpeedColor="@color/amber"
+                        app:sv_speedTextColor="@color/primary_text"
+                        app:sv_speedTextPosition="BOTTOM_CENTER"
+                        app:sv_speedTextSize="30sp"
+                        app:sv_speedometerWidth="12sp"
+                        app:sv_textSize="0dp"
+                        app:sv_textColor="@color/white"
+                        app:sv_unit="Kg"
+                        app:sv_unitTextSize="12sp"
+                        app:sv_unitTextColor="@color/secondary_text"
+                        app:sv_withTremble="false"
+                        app:sv_speedometerMode="TOP"
+                        app:sv_unitUnderSpeedText="true"
+                        tools:ignore="MissingConstraints" />
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/speedView"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/secondary_text"></LinearLayout>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutTimer"
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/icon2"
+                            android:layout_width="@dimen/sizeIcon"
+                            android:layout_height="@dimen/sizeIcon"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            android:tint="@color/teal"
+                            android:src="@drawable/altimeter" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Altezza"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/icon2"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/textSection"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:id="@+id/dotsSetAltezza"
+                            android:layout_width="@dimen/sizeIcon"
+                            android:layout_height="@dimen/sizeIcon"
+                            android:backgroundTint="@color/cardview_light_background"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/dots" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/imageHeght"
+                            android:layout_width="120dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="43dp"
+                            android:src="@drawable/altezza"
+                            android:tint="@color/txt_profile" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="75dp">
+
+                            <TextView
+                                android:id="@+id/id_altezza"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:text="193"
+                                android:textColor="@color/primary_text"
+                                android:textSize="40sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:text="cm"
+                                android:textColor="@color/secondary_text"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_alignParentStart="true"
+                            android:layout_width="@dimen/sizeIcon"
+                            android:layout_height="@dimen/sizeIcon"
+                            android:src="@drawable/plicometro"
+                            android:layout_margin="5dp"
+                            android:tint="@color/amber"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="34dp"
+                            android:padding="5dp"
+                            android:text="Body Fat"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:id="@+id/dotsSetBf"
+                            android:layout_width="@dimen/sizeIcon"
+                            android:layout_height="@dimen/sizeIcon"
+                            android:backgroundTint="@color/cardview_light_background"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/dots" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <com.jjoe64.graphview.GraphView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginBottom="5dp"
+                            android:id="@+id/graphBf" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="@dimen/textLabel"
+                            android:text="% attuale"/>
+
+                        <TextView
+                            android:id="@+id/id_percentBf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@color/primary_text"
+                            android:text="15 %"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentStart="true"
+                            android:text="Stato "
+                            android:textSize="@dimen/textLabel"
+                            android:textAlignment="center"
+                            android:textColor="@color/secondary_text"
+                            />
+
+                        <TextView
+                            android:id="@+id/id_stato"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:text="Stato "
+                            android:textSize="@dimen/textLabel"
+                            android:textAlignment="center"
+                            android:textColor="@color/primary_text"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
+
+
